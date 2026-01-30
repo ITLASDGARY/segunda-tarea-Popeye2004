@@ -21,9 +21,19 @@ public class HumbleCalculator
     public static double Calculate(double num1, double num2, int operation)
     {
         double resultado = 0; 
-        
-        // TODO: Usa switch para calcular según la operación
-        // Ejemplo: switch(operation) { case 1: resultado = num1 + num2; break; ... }
+
+        switch (operation)
+        {
+            case 1:
+                resultado = num1 + num2;
+                break;
+            case 2:
+                resultado = num1 - num2;
+                break;
+            case 3:
+                resultado = num1 * num2;
+                break;
+        }
         
         return resultado;
     }
